@@ -1,0 +1,14 @@
+---
+layout: post
+title: A New Hope
+date: 2012-02-15 16:48
+comments: true
+categories: meta
+---
+Like Futurama, I'm back.
+
+Not too long ago, I decided to get rid of my blog. While I had enjoyed writing in it, it had stagnated for a while, and I didn't really have any inspiration to write more at the time. Cue the ticking of the clock, and some time has passed. Part of the inspiration comes from Nathan Marz in his post “[You should blog, even if you have no readers](http://nathanmarz.com/blog/you-should-blog-even-if-you-have-no-readers.html)”. Now, I feel like I'm ready to return to a more regular writing habit.
+
+This time around, though, I'm not interested in dealing with the disaster that is WordPress. Instead, I've decided to go with a "static site generator": [Octopress](http://octopress.org/). In time, I will bring over a lot of the writing from my old site.
+
+Now, let the games begin!

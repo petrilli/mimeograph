@@ -4,7 +4,7 @@
 
 url: http://mimeographs.amber.org
 title: Mimeographs from the Future
-subtitle: Thoughts teleported from yesterday, tomorrow.
+subtitle: Thoughts teleported from yesterday, delivered fresh, tomorrow.
 author: Chris Petrilli
 simple_search: http://google.com/search
 description:
@@ -69,7 +69,7 @@ twitter_user: petrillic
 twitter_tweet_count: 4
 twitter_show_replies: false
 twitter_follow_button: true
-twitter_show_follower_count: false
+twitter_show_follower_count: true
 twitter_tweet_button: true
 
 # Google +1

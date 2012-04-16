@@ -12,6 +12,7 @@ The first layer of defense you have control over is what packets end up at your 
 
 What I'm going to do is walk you through the foundation rule set (my starter moat) that I base everything else on, which you can find as a [gist on GitHub](https://gist.github.com/1959001). Please feel free to use however you wish, though if you find a mistake I would ask you just let me know by putting a comment on the gist itself. Feel free to add your own alligators and flaming spikes.
 
+
 Categorizing Flows
 ------------------
 
@@ -28,6 +29,10 @@ The first two, `ICMP_IN` and `ICMP_OUT` are somewhat self explanetory.  We want 
 
 We'll be going through them in roughly that order.
 
+
+ICMP Management
+---------------
+
 	-A ICMP_IN -p icmp --icmp-type 8 -j DROP
 	-A ICMP_IN -p icmp -i eth0 --icmp-type 0 -m state --state ESTABLISHED,RELATED -j ACCEPT
 	-A ICMP_IN -p icmp -i eth0 --icmp-type 3 -m state --state ESTABLISHED,RELATED -j ACCEPT
@@ -41,6 +46,10 @@ We'll be going through them in roughly that order.
 In line 1, we just ignore all the ICMP echo requests (type 8). Ping is a good example of a use of an echo request. There's just no reason to respond to them normally. If, however, you have a tool that needs to ping your system to get a response, then you'll need to modify the filter slightly to be address-specific.  Line 2 drops anything that's an echo response (type 0) which we didn't initiate. Next, lines 3 and 4 drop the destination unreachable (type 3) and {% abbr TTL Time to Live %} (type 11) responses if they're not related to something we sent. These are another sneaky way to peek into a system. 
 
 Then, we drop everything else, because they fail the sanity check. Generally, a system would only send an echo request in response to a ping command, and there's only three responses that make any sense to those in the modern world: response, TTL-exceeded and destination unreachable.
+
+
+Spoofed Packets
+---------------
 
 Now that we've dealt with incoming packets, we're going to allow echo requests (ping) to leave the system. Everything else ICMP-related, such as redirects, timestamp requests, etc., shouldn't be coming or going, and so we drop them without note. Finally, we attach our rule chains to the core rule chains, `INPUT` and `OUTPUT`.
 
@@ -74,7 +83,7 @@ Since I almost never have any use for [multicast](http://en.wikipedia.org/wiki/M
 	-A SPOOF_IN -i eth0 -s 0.0.0.0/8 -j SPOOF_LOG_DROP
 	-A SPOOF_IN -i eth0 -s 255.255.255.255/32 -j SPOOF_LOG_DROP
 
-SAY SOMETHING
+Now, we also shouldn't see loopback addresses, or other bonkers addresses showing up on our Ethernet interface. See below for information on the loopback protections.
 
 	-A SPOOF_OUT -i eth0 -s ! <MYIP> -j SPOOF_LOG_DROP
 
@@ -84,6 +93,10 @@ One thing many people forget to do is block their systems from becoming a source
 	-A OUTPUT -j SPOOF_OUT
 
 And now, finally, we attach these new rule chains to the primary ones, just a we did before.
+
+
+TCP Flags
+---------
 
 That brings us to the last "protection" set of rules: those associated with all sorts of crazy flags in the TCP packet. If you've forgotten, the TCP packet has 9 potential flags. Read {% abbr LSB "Least Significant Bit" %} to {% abbr MSB "Most Significant Bit" %}:
 
@@ -138,6 +151,10 @@ Oh, and [merry Christmas](http://en.wikipedia.org/wiki/Christmas_tree_packet). N
 And then, just attach it to the main `INPUT` rule chain.
 
 	-A INPUT -p tcp -j BAD_TCP_FLAGS
+
+
+Normal Traffic Controls
+-----------------------
 
 Now we get into more "normal" traffic controls.  First, we want to allow everything on the loopback (lo) interface. This is used for both local servers (such as databases, proxies, etc.) and for SSH tunneling:
 

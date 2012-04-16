@@ -4,9 +4,9 @@ require "stringex"
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
-ssh_user       = "petrilli@research.amber.org"
+ssh_user       = "petrilli@dworkin.amber.org"
 ssh_port       = "3210"
-document_root  = "~/public_html/"
+document_root  = "~/sites/mimeographs/"
 rsync_delete   = true
 deploy_default = "rsync"
 

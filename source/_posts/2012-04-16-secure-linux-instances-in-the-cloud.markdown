@@ -3,7 +3,7 @@ layout: post
 title: "Secure Linux Instances in the Cloud"
 date: 2012-04-16 14:56
 comments: true
-categories: security
+categories: security linux network
 ---
 
 In the security world, we talk about [defense in depth](http://www.nsa.gov/ia/_files/support/defenseindepth.pdf) (PDF), which basically means that your castle should have a moat, a drawbridge, a lock, and a lot of archers on the ramparts. Historically, in the computer security world this meant that you would have firewalls, {% abbr IDS "Intrusion Detection System" %}, and a multitude of different layers of security. Unfortunately, a lot of that is no longer applicable when you deploy applications into "the cloud". Instead, you have to rethink what those defenses are and how they reinforce and support one another.

@@ -3,7 +3,7 @@ layout: post
 title: "The will of a people?"
 date: 2000-10-14 9:47
 comments: false
-categories: 
+categories: political
 ---
 
 So here we sit, November 14, 2000, a week after the 2000 elections are

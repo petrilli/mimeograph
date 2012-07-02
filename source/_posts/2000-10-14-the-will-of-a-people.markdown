@@ -7,7 +7,7 @@ categories:
 ---
 
 So here we sit, November 14, 2000, a week after the 2000 elections are
-â€œover,â€? and we’re still not totally sure who won. This presents an
+"over" and we’re still not totally sure who won. This presents an
 interesting opportunity to look not just at the process, but more
 importantly the people who ran as well as the people who vote.
 

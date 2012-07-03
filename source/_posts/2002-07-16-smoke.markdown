@@ -1,0 +1,51 @@
+---
+layout: post
+title: "Smoke, mirrors and security"
+date: 2002-07-16 15:04
+comments: false
+categories: security
+---
+
+There's this common misconception among Americans that the actions of the US
+Government since September 11th have had anything to do with the security of
+the common populace. This is a gross mistake. As someone who has been a
+practitioner of risk management and mitigation in physical, electronic and
+social mechanisms, much of what I see is nothing but a sham, largely created
+to distract people from the real problems.
+
+Take airports. The security at airports continues to be abysmal at best,
+insulting in the worst, and misleading in all actuality. I know people who
+have boarded plans without photo ID through Dulles International Aiport (IAD)
+in Washington, DC, and people who are prototypical passengers that would not
+be suspicious (this is not race based, but behavioral) who are harassed to no
+end, repeatedly. Why? Not because they are suspicious, but because they were
+convenient. People are somehow "comforted" by seeing people searched, even if
+those people are not the ones who could potentially present a security risk.
+
+This is typified by the either intentional or negligent avoidance of dealing
+with private jets (otherwise known as "political supports"), cargo transports,
+and other vectors for attacks that are substantially more effective. Why
+weren't they dealt with? Because they're not visible to the "average" person,
+yet they represent the actual targets that an intelligent terrorist would go
+after. We've been fortunate to not have been targeted by an overly intelligent
+and concerted effort, just a rather clumsy one so far.
+
+This is also typified in the methodology of Federal agencies in Washington, DC
+that I work with on a daily basis. Many have erected all sorts of physical
+barriers, but ignore thousands of other vectors that are exposed. Again, lots
+of smoke, no fire. The effective reduction of risk is a difficult job, and
+requires enormous intellectual resources --- not necessarily monetary
+resources. Much of the current government approaches are focused on spending
+money --- often just to line pockets of supporters or constituents --- rather
+than the examination of risks strategies.
+
+As I said, risks can not be eliminated, but can only be mitigated, reduced and
+managed. I have addressed too many people involved in the "war on terrorism"
+who feel that there is a 100% solution out there, when that is the fatal flaw.
+The assumption of perfection creates it's own enormous risk. Only when we
+understands the risks can be manage them.
+
+Today, we are no more safe than we were September 10th due to anything the
+government has done, but we have lost countless liberties that will be
+difficult to regain. Any increase in security is largely due to the attention
+of the American people, not the government.

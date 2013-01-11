@@ -3,7 +3,7 @@ layout: post
 title: Compliance versus velocity
 date: 2012-08-03 20:36
 comments: true
-categories: security,compliance,cloud
+categories: security compliance cloud
 ---
 
 In government computing circles this year, discussions of cloud and [FedRAMP](http://www.gsa.gov/portal/category/102371) have been all the rage.

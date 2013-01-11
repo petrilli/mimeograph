@@ -3,7 +3,7 @@ layout: post
 title: "A Voice in the Darkness"
 date: 2012-04-28 20:29
 comments: true
-categories: science, personal
+categories: science personal
 ---
 > "The cosmos is all that is, or ever was, or ever will be. 
 > Our contemplations of the cosmos stir us. There is a tingling in the spine;

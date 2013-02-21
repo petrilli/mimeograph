@@ -3,7 +3,7 @@ layout: post
 title: "Review: Two Scoops of Django"
 date: 2013-02-19 16:01
 comments: true
-categories: 
+categories: review book python django
 ---
 
 A few weeks ago, [Audrey Roy](http://audreymroy.com/) and [Daniel Greenfield](http://pydanny.com/) [released the beta of their new book](https://django.2scoops.org/), <cite>Two Scoops of Django: Django Best Practices for Django 1.5</cite>.

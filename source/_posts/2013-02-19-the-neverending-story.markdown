@@ -3,7 +3,7 @@ layout: post
 title: "The neverending story"
 date: 2013-02-19 15:40
 comments: true
-categories: 
+categories: reading-list
 ---
 
 Trying to catch up with my backlog of papers had been put on hold for a little bit as I tried to clean up a mess at work.

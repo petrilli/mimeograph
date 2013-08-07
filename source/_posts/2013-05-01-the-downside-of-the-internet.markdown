@@ -22,3 +22,4 @@ Combine the dominant confirmation biases exhibited by most people -- and part of
 The Internet gave them the ability to find their own "kind", and reinforce their beliefs, thereby creating a more monolithic social structure that can be used to garner perceived rationality. 
 
 Or at least, that's my view. 
+
